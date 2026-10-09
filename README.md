@@ -1,12 +1,6 @@
 # netlib
 
 Low-level Ethernet, VLAN and ARP networking for Go, in a single module.
-Everything you need to build, parse, send and capture raw network frames, with
-no third-party GitHub dependencies (only Go's official `golang.org/x` packages).
-
-```
-go get github.com/mascarenhasmelson/netlib
-```
 
 Requires Go 1.26 or newer.
 
@@ -780,7 +774,3 @@ go test ./pcap -run '^$' -fuzz FuzzReader -fuzztime 30s
 go test ./arp -run '^$' -fuzz FuzzPacketUnmarshalMarshal -fuzztime 30s
 ```
 
-## License
-
-MIT. See [LICENSE.md](LICENSE.md). Based on the MIT-licensed `arp`,
-`ethernet`, `packet` and `socket` packages by Matt Layher.
